@@ -5,7 +5,7 @@ const MobileSidebar = () => {
     <div className="mobile-sidebar mobile-sidebar1">
       <div className="logosicon-area">
         <div className="logos">
-          <img src="assets/img/logo/logo1.png" alt="" />
+          <img src="assets/img/logo/main-logo.png" alt="" style={{width: '50%', filter: 'brightness(0.8)'}} />
         </div>
         <div className="menu-close">
           <i className="fa-solid fa-xmark"></i>
@@ -24,7 +24,7 @@ const MobileSidebar = () => {
             </Link>
           </li>
           <li className="has-sub hash-has-sub">
-            <Link to="/" className="hash-nav">
+            <Link to="/services" className="hash-nav">
               Services
             </Link>
           </li>

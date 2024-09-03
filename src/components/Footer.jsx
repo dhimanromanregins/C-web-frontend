@@ -7,14 +7,14 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-3 col-md-6">
             <div className="footer-logo-area">
-              <Link to="/"><img src="assets/img/logo/logo1.png" alt="" /></Link>
+              <Link to="/"><img src="assets/img/logo/main-logo.png" alt="" style={{filter: 'brightness(0.8)'}} /></Link>
               <p>
               Tailored software and cutting-edge technologies give businesses a competitive edge.
               </p>
               <ul>
                 <li>
                   <a href="#">
-                    <img src="assets/img/icons/facebook.svg" alt="" />
+                    <img src="assets/img/icons/facebook.svg" alt="" style={{filter: 'brightness(0.8)'}} />
                   </a>
                 </li>
                 <li>

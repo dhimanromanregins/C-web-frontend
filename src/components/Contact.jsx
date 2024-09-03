@@ -6,6 +6,11 @@ const Contact = () => {
   const location = useLocation();
 
   useEffect(()=>{
+    const closeMenu = document.getElementsByClassName('menu-close')[0];
+    if (closeMenu){
+      closeMenu.click();
+    };
+
     setTimeout(()=>{
       const animatedEles = document.getElementsByClassName('aos-init');
       for (let ele of animatedEles){

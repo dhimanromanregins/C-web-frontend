@@ -13,6 +13,7 @@ import PageProgress from './components/PageProgress';
 import MobileHeader from './components/MobileHeader';
 import MobileSidebar from './components/MobileSidebar';
 import Blog from './components/Blog';
+import Services from './components/Services';
 import Page404 from './components/other/Page404';
 import ScrollToTop from './components/other/ScrollToTop';
 
@@ -49,8 +50,9 @@ function App() {
           <Header/>
           <div className='all-section-bg' style={{ backgroundImage: 'url(assets/img/bg/pages-bg1.png)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
             {page === 'about' ? <About/> : null}
-            {page === 'contact' ? <Contact/> : null}
+            {page === 'services' ? <Services/> : null}
             {page === 'blogs' ? <Blog/> : null}
+            {page === 'contact' ? <Contact/> : null}
             <Footer/>
           </div>
         </>
@@ -65,8 +67,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Navigate page='home' />} />
             <Route path="/about" element={<Navigate page='about' />} />
-            <Route path="/contact" element={<Navigate page='contact' />} />
+            <Route path="/services" element={<Navigate page='services' />} />
             <Route path="/blogs" element={<Navigate page='blogs' />} />
+            <Route path="/contact" element={<Navigate page='contact' />} />
             <Route path="*" element={<Page404/>} />
           </Routes>
         </Router>

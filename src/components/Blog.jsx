@@ -1,11 +1,19 @@
 import { Link } from 'react-router-dom';
 import Cta from './Cta';
+import { useEffect } from 'react';
 
 const Blog = () => {
+  useEffect(()=>{
+    const closeMenu = document.getElementsByClassName('menu-close')[0];
+    if (closeMenu){
+      closeMenu.click();
+    };
+  }, []);
+
   return (
     <>
       <div
-        class="about-header-area"
+        className="about-header-area"
         style={{
           backgroundImage: "url(assets/img/bg/inner-header.png)",
           backgroundRepeat: "no-repeat",
@@ -16,20 +24,20 @@ const Blog = () => {
         <img
           src="assets/img/elements/elements1.png"
           alt=""
-          class="elements1 aniamtion-key-1"
+          className="elements1 aniamtion-key-1"
         />
         <img
           src="assets/img/elements/star2.png"
           alt=""
-          class="star2 keyframe5"
+          className="star2 keyframe5"
         />
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 m-auto">
-              <div class="about-inner-header heading9 text-center">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 m-auto">
+              <div className="about-inner-header heading9 text-center">
                 <h1>Blogs</h1>
                 <Link to="/">
-                  Home <i class="fa-solid fa-angle-right"></i>{" "}
+                  Home <i className="fa-solid fa-angle-right"></i>{" "}
                   <span>Blogs</span>
                 </Link>
               </div>
@@ -37,15 +45,15 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div class="blog-top-area sp1">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="blog-top-boxarea">
-                <div class="row align-items-center">
-                  <div class="col-lg-5">
-                    <div class="content-area heading2">
-                      <div class="tags-area">
+      <div className="blog-top-area sp1">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="blog-top-boxarea">
+                <div className="row align-items-center">
+                  <div className="col-lg-5">
+                    <div className="content-area heading2">
+                      <div className="tags-area">
                         <ul>
                           <li>
                             <Link to="/">
@@ -67,20 +75,20 @@ const Blog = () => {
                       <h2>
                         The Power of PPC Advertising: How to Maximize Your ROI
                       </h2>
-                      <div class="space8"></div>
-                      <div class="btn-area">
-                        <Link to="/blogs" class="header-btn1">
+                      <div className="space8"></div>
+                      <div className="btn-area">
+                        <Link to="/blogs" className="header-btn1">
                           Read Full Story{" "}
                           <span>
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <i className="fa-solid fa-arrow-right"></i>
                           </span>
                         </Link>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-2"></div>
-                  <div class="col-lg-5">
-                    <div class="images image-anime">
+                  <div className="col-lg-2"></div>
+                  <div className="col-lg-5">
+                    <div className="images image-anime">
                       <img src="assets/img/all-images/blog-img19.png" alt="" />
                     </div>
                   </div>
@@ -90,16 +98,16 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div class="blog1-scetion-area sp1 bg2">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="blog-author-boxarea">
-                <div class="img1">
+      <div className="blog1-scetion-area sp1 bg2">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 col-md-6">
+              <div className="blog-author-boxarea">
+                <div className="img1">
                   <img src="assets/img/all-images/blog-img1.png" alt="" />
                 </div>
-                <div class="content-area">
-                  <div class="tags-area">
+                <div className="content-area">
+                  <div className="tags-area">
                     <ul>
                       <li>
                         <Link to="/">
@@ -122,21 +130,21 @@ const Blog = () => {
                     Are you looking to improve your website's visibility and
                     attract more organic traffic?{" "}
                   </p>
-                  <Link to="/" class="readmore">
-                    Read More <i class="fa-solid fa-arrow-right"></i>
+                  <Link to="/" className="readmore">
+                    Read More <i className="fa-solid fa-arrow-right"></i>
                   </Link>
                 </div>
               </div>
-              <div class="space30"></div>
+              <div className="space30"></div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="blog-author-boxarea">
-                <div class="img1">
+            <div className="col-lg-4 col-md-6">
+              <div className="blog-author-boxarea">
+                <div className="img1">
                   <img src="assets/img/all-images/blog-img2.png" alt="" />
                 </div>
-                <div class="content-area">
-                  <div class="tags-area">
+                <div className="content-area">
+                  <div className="tags-area">
                     <ul>
                       <li>
                         <Link to="/">
@@ -159,21 +167,21 @@ const Blog = () => {
                     Unlock the full potential of your digital marketing strategy
                     with the power of PPC.
                   </p>
-                  <Link to="/" class="readmore">
-                    Read More <i class="fa-solid fa-arrow-right"></i>
+                  <Link to="/" className="readmore">
+                    Read More <i className="fa-solid fa-arrow-right"></i>
                   </Link>
                 </div>
               </div>
-              <div class="space30"></div>
+              <div className="space30"></div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="blog-author-boxarea">
-                <div class="img1">
+            <div className="col-lg-4 col-md-6">
+              <div className="blog-author-boxarea">
+                <div className="img1">
                   <img src="assets/img/all-images/blog-img3.png" alt="" />
                 </div>
-                <div class="content-area">
-                  <div class="tags-area">
+                <div className="content-area">
+                  <div className="tags-area">
                     <ul>
                       <li>
                         <Link to="/">
@@ -196,21 +204,21 @@ const Blog = () => {
                     Where mobile devices dominate internet usage, responsive web
                     design more crucial.
                   </p>
-                  <Link to="/" class="readmore">
-                    Read More <i class="fa-solid fa-arrow-right"></i>
+                  <Link to="/" className="readmore">
+                    Read More <i className="fa-solid fa-arrow-right"></i>
                   </Link>
                 </div>
               </div>
-              <div class="space30"></div>
+              <div className="space30"></div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="blog-author-boxarea">
-                <div class="img1">
+            <div className="col-lg-4 col-md-6">
+              <div className="blog-author-boxarea">
+                <div className="img1">
                   <img src="assets/img/all-images/blog-img15.png" alt="" />
                 </div>
-                <div class="content-area">
-                  <div class="tags-area">
+                <div className="content-area">
+                  <div className="tags-area">
                     <ul>
                       <li>
                         <Link to="/">
@@ -233,21 +241,21 @@ const Blog = () => {
                     Are you looking to improve your website's visibility and
                     attract more organic traffic?{" "}
                   </p>
-                  <Link to="/" class="readmore">
-                    Read More <i class="fa-solid fa-arrow-right"></i>
+                  <Link to="/" className="readmore">
+                    Read More <i className="fa-solid fa-arrow-right"></i>
                   </Link>
                 </div>
               </div>
-              <div class="space30"></div>
+              <div className="space30"></div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="blog-author-boxarea">
-                <div class="img1">
+            <div className="col-lg-4 col-md-6">
+              <div className="blog-author-boxarea">
+                <div className="img1">
                   <img src="assets/img/all-images/blog-img16.png" alt="" />
                 </div>
-                <div class="content-area">
-                  <div class="tags-area">
+                <div className="content-area">
+                  <div className="tags-area">
                     <ul>
                       <li>
                         <Link to="/">
@@ -271,21 +279,21 @@ const Blog = () => {
                     Unlock the full potential of your digital marketing strategy
                     with the power of PPC.
                   </p>
-                  <Link to="/" class="readmore">
-                    Read More <i class="fa-solid fa-arrow-right"></i>
+                  <Link to="/" className="readmore">
+                    Read More <i className="fa-solid fa-arrow-right"></i>
                   </Link>
                 </div>
               </div>
-              <div class="space30"></div>
+              <div className="space30"></div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="blog-author-boxarea">
-                <div class="img1">
+            <div className="col-lg-4 col-md-6">
+              <div className="blog-author-boxarea">
+                <div className="img1">
                   <img src="assets/img/all-images/blog-img3.png" alt="" />
                 </div>
-                <div class="content-area">
-                  <div class="tags-area">
+                <div className="content-area">
+                  <div className="tags-area">
                     <ul>
                       <li>
                         <Link to="/">
@@ -308,21 +316,21 @@ const Blog = () => {
                     Where mobile devices dominate internet usage, responsive web
                     design more crucial.
                   </p>
-                  <Link to="/" class="readmore">
-                    Read More <i class="fa-solid fa-arrow-right"></i>
+                  <Link to="/" className="readmore">
+                    Read More <i className="fa-solid fa-arrow-right"></i>
                   </Link>
                 </div>
               </div>
-              <div class="space30"></div>
+              <div className="space30"></div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="blog-author-boxarea">
-                <div class="img1">
+            <div className="col-lg-4 col-md-6">
+              <div className="blog-author-boxarea">
+                <div className="img1">
                   <img src="assets/img/all-images/blog-img15.png" alt="" />
                 </div>
-                <div class="content-area">
-                  <div class="tags-area">
+                <div className="content-area">
+                  <div className="tags-area">
                     <ul>
                       <li>
                         <Link to="/">
@@ -346,21 +354,21 @@ const Blog = () => {
                     Are you looking to improve your website's visibility and
                     attract more organic traffic?{" "}
                   </p>
-                  <Link to="/" class="readmore">
-                    Read More <i class="fa-solid fa-arrow-right"></i>
+                  <Link to="/" className="readmore">
+                    Read More <i className="fa-solid fa-arrow-right"></i>
                   </Link>
                 </div>
               </div>
-              <div class="space30"></div>
+              <div className="space30"></div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="blog-author-boxarea">
-                <div class="img1">
+            <div className="col-lg-4 col-md-6">
+              <div className="blog-author-boxarea">
+                <div className="img1">
                   <img src="assets/img/all-images/blog-img18.png" alt="" />
                 </div>
-                <div class="content-area">
-                  <div class="tags-area">
+                <div className="content-area">
+                  <div className="tags-area">
                     <ul>
                       <li>
                         <Link to="/">
@@ -383,21 +391,21 @@ const Blog = () => {
                     Unlock the full potential of your digital marketing strategy
                     with the power of PPC.
                   </p>
-                  <Link to="/" class="readmore">
-                    Read More <i class="fa-solid fa-arrow-right"></i>
+                  <Link to="/" className="readmore">
+                    Read More <i className="fa-solid fa-arrow-right"></i>
                   </Link>
                 </div>
               </div>
-              <div class="space30"></div>
+              <div className="space30"></div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="blog-author-boxarea">
-                <div class="img1">
+            <div className="col-lg-4 col-md-6">
+              <div className="blog-author-boxarea">
+                <div className="img1">
                   <img src="assets/img/all-images/blog-img17.png" alt="" />
                 </div>
-                <div class="content-area">
-                  <div class="tags-area">
+                <div className="content-area">
+                  <div className="tags-area">
                     <ul>
                       <li>
                         <Link to="/">
@@ -420,41 +428,41 @@ const Blog = () => {
                     Where mobile devices dominate internet usage, responsive web
                     design more crucial.
                   </p>
-                  <Link to="/" class="readmore">
-                    Read More <i class="fa-solid fa-arrow-right"></i>
+                  <Link to="/" className="readmore">
+                    Read More <i className="fa-solid fa-arrow-right"></i>
                   </Link>
                 </div>
               </div>
-              <div class="space30"></div>
+              <div className="space30"></div>
             </div>
 
-            <div class="col-lg-12">
-              <div class="pagination-area">
+            <div className="col-lg-12">
+              <div className="pagination-area">
                 <nav aria-label="Page navigation example">
-                  <ul class="pagination justify-content-center">
-                    <li class="page-item">
-                      <Link class="page-link" to="/">
-                        <i class="fa-solid fa-angle-left"></i>
+                  <ul className="pagination justify-content-center">
+                    <li className="page-item">
+                      <Link className="page-link" to="/">
+                        <i className="fa-solid fa-angle-left"></i>
                       </Link>
                     </li>
-                    <li class="page-item">
-                      <Link class="page-link active" to="/">
+                    <li className="page-item">
+                      <Link className="page-link active" to="/">
                         1
                       </Link>
                     </li>
-                    <li class="page-item">
-                      <Link class="page-link" to="/">
+                    <li className="page-item">
+                      <Link className="page-link" to="/">
                         2
                       </Link>
                     </li>
-                    <li class="page-item">
-                      <Link class="page-link" to="/">
+                    <li className="page-item">
+                      <Link className="page-link" to="/">
                         3
                       </Link>
                     </li>
-                    <li class="page-item">
-                      <Link class="page-link" to="/">
-                        <i class="fa-solid fa-angle-right"></i>
+                    <li className="page-item">
+                      <Link className="page-link" to="/">
+                        <i className="fa-solid fa-angle-right"></i>
                       </Link>
                     </li>
                   </ul>

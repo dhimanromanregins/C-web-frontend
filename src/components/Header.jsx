@@ -14,7 +14,7 @@ const Header = () => {
               <div className="header-elements">
                 <div className="site-logo">
                   <Link to="/">
-                    <img src="/assets/img/logo/logo1.png" alt="" />
+                    <img src="/assets/img/logo/main-logo.png" alt="" style={{width: '40%', filter: 'brightness(0.8)'}} />
                   </Link>
                 </div>
                 <div className="main-menu">
@@ -28,7 +28,7 @@ const Header = () => {
                       <Link to="/about">About</Link>
                     </li>
                     <li>
-                      <Link to="/">
+                      <Link to="/services">
                         Services
                       </Link>
                     </li>
