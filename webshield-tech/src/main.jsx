@@ -14,7 +14,7 @@ import './assets/css/plugins/slick-slider.css';
 import './App.css';
 
 createRoot(document.getElementById('proj')).render(
-  <StrictMode>
+  // <StrictMode>
     <App />
-  </StrictMode>,
+  // </StrictMode>,
 )
